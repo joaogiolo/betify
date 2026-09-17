@@ -1,0 +1,24 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Política de Privacidade | Betini Academy",
+};
+
+export default function PrivacidadePage() {
+  return (
+    <main className="mx-auto max-w-3xl px-5 md:px-8 py-24 md:py-32">
+      <Link href="/" className="text-sm text-accent hover:underline">
+        ← Voltar para a página inicial
+      </Link>
+      <h1 className="text-3xl md:text-4xl font-extrabold mt-6 mb-8">
+        Política de Privacidade
+      </h1>
+      <p className="text-text-muted leading-relaxed">
+        [Conteúdo da Política de Privacidade a ser preenchido pelo cliente.
+        Esta página é um placeholder criado para manter os links do rodapé
+        funcionais.]
+      </p>
+    </main>
+  );
+}
