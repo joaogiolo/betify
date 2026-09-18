@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { content, WHATSAPP_URL } from "@/lib/config";
+import { content } from "@/lib/config";
 import { LogoFull } from "./LogoServer";
 
 export function Footer() {
@@ -35,24 +35,16 @@ export function Footer() {
           <h3 className="text-sm font-semibold mb-4 text-text">Atendimento</h3>
           <ul className="space-y-2.5">
             <li>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-text-muted hover:text-accent transition-colors"
-              >
-                Fale no WhatsApp
-              </a>
-            </li>
-            <li>
               <span className="text-sm text-text-muted">
                 Instagram{" "}
                 {content.social.instagram ? (
                   <a
                     href={content.social.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-accent transition-colors"
                   >
-                    @betiniacademy
+                    @cauabetini_
                   </a>
                 ) : (
                   <span className="italic">[link a definir]</span>
@@ -65,9 +57,11 @@ export function Footer() {
                 {content.social.tiktok ? (
                   <a
                     href={content.social.tiktok}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-accent transition-colors"
                   >
-                    @betiniacademy
+                    @cauabetini_
                   </a>
                 ) : (
                   <span className="italic">[link a definir]</span>

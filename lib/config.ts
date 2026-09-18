@@ -114,8 +114,8 @@ export const content = {
   },
 
   social: {
-    instagram: "",
-    tiktok: "",
+    instagram: "https://www.instagram.com/cauabetini_/?hl=en",
+    tiktok: "https://www.tiktok.com/@cauabetini_?_r=1&_t=ZS-99qdkcmr21f",
   },
 
   legalNotice:
