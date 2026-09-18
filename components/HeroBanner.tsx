@@ -9,7 +9,15 @@ export function HeroBanner({ className }: { className?: string }) {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[68%_12%] brightness-[0.85] contrast-100"
+        className="object-cover object-[68%_12%] brightness-[0.85] contrast-100 md:hidden"
+      />
+      <Image
+        src="/images/hero-banner-desktop.webp"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="hidden object-cover object-[68%_30%] brightness-[0.85] contrast-100 md:block"
       />
 
       {/* Dark toward the left/center where the headline sits, fading out
