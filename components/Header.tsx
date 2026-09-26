@@ -31,7 +31,7 @@ export function Header() {
         </nav>
 
         <WhatsAppButton location="header" size="sm">
-          Quero entrar
+          {content.headerCtaLabel}
         </WhatsAppButton>
       </div>
     </HeaderShell>

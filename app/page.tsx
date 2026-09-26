@@ -2,8 +2,8 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { MarketplaceSlider } from "@/components/MarketplaceSlider";
 import { HowItWorks } from "@/components/HowItWorks";
-import { Highlights } from "@/components/Highlights";
 import { Authority } from "@/components/Authority";
+import { ProofResults } from "@/components/ProofResults";
 import { FinalCTA } from "@/components/FinalCTA";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
@@ -18,8 +18,8 @@ export default function Home() {
         <Hero />
         <MarketplaceSlider />
         <HowItWorks />
-        <Highlights />
         <Authority />
+        <ProofResults />
         <FinalCTA />
         <FAQ />
       </main>

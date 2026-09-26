@@ -57,7 +57,7 @@ export function MobileStickyCTA() {
           style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
         >
           <WhatsAppButton location="sticky-mobile" className="w-full">
-            {content.hero.ctaLabel}
+            {content.mobileStickyCtaLabel}
           </WhatsAppButton>
         </motion.div>
       )}
