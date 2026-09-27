@@ -19,6 +19,13 @@
     "react-use-measure": "^2.1.7",
     "tailwind-merge": "^3.7.0"
   },
+  "browserslist": [
+    "chrome >= 91",
+    "edge >= 91",
+    "firefox >= 90",
+    "safari >= 15",
+    "ios_saf >= 15"
+  ],
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

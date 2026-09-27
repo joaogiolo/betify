@@ -138,50 +138,6 @@ h4 {
   color: transparent;
 }
 
-.card-glow-border {
-  position: relative;
-  isolation: isolate;
-}
-
-.card-glow-border::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: conic-gradient(
-    from var(--angle, 0deg),
-    transparent 0%,
-    var(--accent) 15%,
-    transparent 30%
-  );
-  -webkit-mask: linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.4s var(--easing);
-  animation: spin-angle 3s linear infinite paused;
-  z-index: 1;
-}
-
-.card-glow-border:hover::before {
-  opacity: 1;
-  animation-play-state: running;
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes spin-angle {
-  to {
-    --angle: 360deg;
-  }
-}
-
 @keyframes accordion-down {
   from {
     height: 0;
