@@ -41,28 +41,28 @@ export const content = {
       {
         tag: "INDIVIDUAL",
         description: "A estratégia é direcionada para sua operação, seus produtos e seus números.",
-        image: "/images/mentoria/individual.png",
+        image: "/images/mentoria/individual.webp",
       },
       {
         tag: "TODA SEMANA",
         description: "Acompanhamos resultados, corrigimos o que for necessário e definimos o próximo passo.",
-        image: "/images/mentoria/todasemana.png",
+        image: "/images/mentoria/todasemana.webp",
       },
       {
         tag: "NA PRÁTICA",
         description: "Analisamos produtos, anúncios, campanhas, métricas e oportunidades diretamente nas plataformas.",
-        image: "/images/mentoria/napratica.png",
+        image: "/images/mentoria/napratica.webp",
       },
       {
         tag: "DO ZERO",
         description: "Se você ainda não vende, eu te ensino desde o início.",
-        image: "/images/mentoria/dozero.png",
+        image: "/images/mentoria/dozero.webp",
       },
       {
         tag: "SUPORTE",
         description:
           "Você terá contato direto pelo meu WhatsApp para tirar dúvidas rápidas sobre suas vendas.",
-        image: "/images/mentoria/suporte.png",
+        image: "/images/mentoria/suporte.webp",
       },
     ] as { tag: string; description: string; image: string | null }[],
   },

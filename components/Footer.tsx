@@ -4,7 +4,10 @@ import { LogoFull } from "./LogoServer";
 
 export function Footer() {
   return (
-    <footer className="bg-black relative">
+    <footer
+      className="bg-black relative"
+      style={{ contentVisibility: "auto", containIntrinsicSize: "0 800px" }}
+    >
       <div className="section-divider" />
 
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 grid sm:grid-cols-2 md:grid-cols-3 gap-10">

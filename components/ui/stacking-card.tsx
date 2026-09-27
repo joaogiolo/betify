@@ -13,8 +13,11 @@
 //   is a content section, not a portfolio demo.
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { cn } from "@/lib/utils";
+
+const IMAGE_SIZES = "(max-width: 768px) 90vw, 540px";
 
 export interface StackingCardItem {
   title: string;
@@ -96,11 +99,7 @@ function StackingCard({
           >
             {image ? (
               <motion.div className="absolute inset-0 h-full w-full" style={{ scale: imageScale }}>
-                <img
-                  src={image}
-                  alt={title}
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
+                <Image src={image} alt={title} fill sizes={IMAGE_SIZES} className="object-cover" />
               </motion.div>
             ) : (
               <div className="absolute inset-0 flex items-center justify-center border border-dashed border-white/15 rounded-xl m-1">

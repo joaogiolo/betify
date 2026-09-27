@@ -12,7 +12,6 @@ export function LogoFull({ className }: { className?: string }) {
         width={220}
         height={64}
         className={cn("h-8 w-auto object-contain", className)}
-        priority
       />
     );
   }

@@ -29,8 +29,8 @@ export function Hero() {
               {group.map((word, wi) => (
                 <motion.span
                   key={wi}
-                  initial={{ opacity: 0, y: 14, filter: "blur(4px)" }}
-                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  initial={{ opacity: 0, y: 14 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 0.6,
                     delay: gi * 0.25 + wi * 0.06,

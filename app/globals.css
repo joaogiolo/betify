@@ -231,3 +231,35 @@ h4 {
     scroll-behavior: auto !important;
   }
 }
+
+/* Marquee-style auto-scrollers (ProofResults image slider). Defined here,
+   in the static global stylesheet, rather than injected per-render via a
+   component-local <style> tag: a handful of mobile browsers (notably
+   iOS Safari) can fail to start a CSS animation declared in a <style>
+   element that gets created/reconciled during hydration, leaving it
+   frozen until the next reflow (e.g. a touch or resize). A rule that's
+   part of the stylesheet from first paint doesn't have that race, and
+   translate3d + will-change force it onto the GPU compositor so it stays
+   smooth instead of falling back to (or stalling on) main-thread paint. */
+@keyframes image-auto-slider-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.image-auto-slider-track {
+  animation-name: image-auto-slider-scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image-auto-slider-track {
+    animation: none;
+  }
+}

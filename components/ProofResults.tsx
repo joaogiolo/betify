@@ -11,12 +11,12 @@ const IMG_BASE = "/images/proof";
 
 // order = foto1 .. foto6
 const IMAGES: ImageAutoSliderItem[] = [
-  { src: `${IMG_BASE}/foto1.png`, alt: "Resultado 1" },
-  { src: `${IMG_BASE}/foto2.png`, alt: "Resultado 2" },
-  { src: `${IMG_BASE}/foto3.png`, alt: "Resultado 3" },
-  { src: `${IMG_BASE}/foto4.png`, alt: "Resultado 4" },
-  { src: `${IMG_BASE}/foto5.png`, alt: "Resultado 5" },
-  { src: `${IMG_BASE}/foto6.png`, alt: "Resultado 6" },
+  { src: `${IMG_BASE}/foto1.webp`, alt: "Resultado 1" },
+  { src: `${IMG_BASE}/foto2.webp`, alt: "Resultado 2" },
+  { src: `${IMG_BASE}/foto3.webp`, alt: "Resultado 3" },
+  { src: `${IMG_BASE}/foto4.webp`, alt: "Resultado 4" },
+  { src: `${IMG_BASE}/foto5.webp`, alt: "Resultado 5" },
+  { src: `${IMG_BASE}/foto6.webp`, alt: "Resultado 6" },
 ];
 
 export function ProofResults() {

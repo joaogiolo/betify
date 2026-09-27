@@ -11,11 +11,18 @@ export function HeroBanner({ className }: { className?: string }) {
         sizes="100vw"
         className="object-cover object-[68%_12%] brightness-[0.85] contrast-100 md:hidden"
       />
+      {/* Desktop-only crop: no `priority` here, since both banners are
+          always in the DOM and Next.js's priority preload doesn't know
+          about the md:hidden/hidden md:block split above — giving both
+          images priority would preload the desktop banner on mobile too
+          (and vice versa). `loading="lazy"` on a display:none element is
+          never fetched by the browser, so on mobile this never loads at
+          all; on desktop it's laid out immediately and loads right away. */}
       <Image
         src="/images/hero-banner-desktop.webp"
         alt=""
         fill
-        priority
+        loading="lazy"
         sizes="100vw"
         className="hidden object-cover object-[68%_30%] brightness-[0.85] contrast-100 md:block"
       />
